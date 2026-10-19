@@ -40,8 +40,8 @@ The `copies` field must be a non-negative integer.
 **Step 1: Clone the repository**
 
 ```bash
-git clone <REPOSITORY_URL>
-cd <REPOSITORY_FOLDER>
+git clone https://github.com/spicy2020161-ship-it/CIT3102-m5-books.git
+cd CIT3102-m5-books
 ```
 
 **Step 2: Install dependencies**
