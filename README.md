@@ -203,3 +203,16 @@ The HTTP 204 No Content status means that the server successfully processed the 
 ## 7. Project Summary
 
 The Library Books Management API provides CRUD functionality for managing book records. Laravel Sanctum protects the API endpoints through token-based authentication. Input validation prevents invalid book records from being saved, while filtering allows users to find books by genre or shelf location. All ten Bruno API scenarios were successfully tested.
+
+
+## 8. Testing the API with Bruno
+
+To test the API, start the Laravel development server using `php artisan serve` and open Bruno.
+
+First, send a POST request to `/api/register` to create a user. Next, send a POST request to `/api/login` using the registered email and password.
+
+Copy the authentication token returned by the login endpoint. For protected routes, select Bearer Token in Bruno's Auth tab and paste the token.
+
+You can now test the Books CRUD endpoints. The API returns HTTP status codes such as 200, 201, 401, 404, 422, and 204 depending on the request result.
+
+Never publish active authentication tokens or real passwords in screenshots.
